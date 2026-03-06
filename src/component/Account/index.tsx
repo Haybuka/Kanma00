@@ -15,6 +15,7 @@ const AccountCards = () => {
                 showsHorizontalScrollIndicator={false}
                 snapToStart
                 horizontal
+                nestedScrollEnabled
                 data={mockAccounts}
                 renderItem={({ item }) => <AccountCard card={item} />}
                 ItemSeparatorComponent={<View style={styles.itemSeperator} />}

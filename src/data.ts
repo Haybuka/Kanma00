@@ -123,7 +123,7 @@ export const mockTransactions: Transaction[] = [
         description: "Transfer from Chinedu Eze",
         sender: "Chinedu Eze",
         reference: "TXN20240228002",
-        status: "success",
+        status: "failed",
         date: "2024-02-28T11:15:00Z",
     },
     {
@@ -149,7 +149,7 @@ export const mockTransactions: Transaction[] = [
         description: "Airtel 10GB Data Bundle",
         recipient: "08098765432",
         reference: "TXN20240227004",
-        status: "success",
+        status: "failed",
         date: "2024-02-27T08:20:00Z",
     },
     {

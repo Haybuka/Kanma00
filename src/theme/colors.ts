@@ -4,11 +4,15 @@ export const COLORS = {
     SlateCard: '#374151',
     Grey900: '#171717',
     grey100: '#F5F5F5',
+    grey500 : '#737373',
     white: '#FFF',
     white70: '#FFFFFFB2',
     white20: '#FFFFFF33',
     white10: '#FFFFFF1A',
     bodyTiny: '#FFFFFFB2',
     indigo500: '#6366F1',
-    red50: '#FEF2F2'
+    red50: '#FEF2F2',
+    red600 :'#DC2626',
+    green50: '#F0FDF4',
+    green700 : '#15803D'
 }

@@ -29,16 +29,16 @@ export default SectionHeading
 const styles = StyleSheet.create({
     container: {
         paddingVertical: 24,
-        paddingHorizontal: 20
+        paddingHorizontal: 20,
     },
     text: {
         marginVertical: 24,
     },
-nextScreen : {
-    flexDirection : 'row',
-    alignItems : 'center',
-    gap: 4
-},
+    nextScreen: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 4
+    },
     headerContainer: {
         justifyContent: 'space-between',
         flexDirection: 'row',

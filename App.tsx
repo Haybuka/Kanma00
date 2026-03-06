@@ -5,7 +5,7 @@
  * @format
  */
 
-import { StatusBar, Text, useColorScheme, View } from 'react-native';
+import {  StatusBar, Text, useColorScheme, View } from 'react-native';
 import {
   SafeAreaProvider,
   // useSafeAreaInsets,
@@ -21,19 +21,22 @@ function App() {
   // const insets = useSafeAreaInsets();
   return (
     <SafeAreaProvider >
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <View>
+      {/* <ScrollView > */}
+        <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
+        <View>
 
-        <Text>  Top Section</Text>
-      </View>
-      <AccountCards />
+          <Text>  Top Section</Text>
+        </View>
+        <AccountCards />
 
-      <SectionHeading title='Recent Transactions' nextScreen>
-        <Transactions />
-      </SectionHeading>
-      <SectionHeading title='Spending by Category'>
-        <Typography>Hi</Typography>
-      </SectionHeading>
+        <SectionHeading title='Recent Transactions' nextScreen>
+          <Transactions />
+        </SectionHeading>
+        <SectionHeading title='Spending by Category'>
+          <Typography>Hi</Typography>
+        </SectionHeading>
+
+      {/* </ScrollView> */}
     </SafeAreaProvider>
   );
 }
