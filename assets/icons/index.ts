@@ -6,6 +6,7 @@ import Search from './search.svg'
 import Bell from './bell.svg'
 import Eye from './eye.svg'
 import Send from './send.svg'
+
 export const Icons = {
     ChevronRight,
     ChevronUp,

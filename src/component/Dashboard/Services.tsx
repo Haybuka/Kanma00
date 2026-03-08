@@ -1,4 +1,4 @@
-import { FlatList, StyleSheet, Text, View } from 'react-native'
+import { FlatList, StyleSheet, View } from 'react-native'
 import React, { useState } from 'react'
 import { COLORS } from '../../theme/colors'
 import ServicesCard from './ServicesCard'
@@ -31,7 +31,7 @@ const Services = () => {
 
                
             </View>
-            <View style={[{height:innerHeight -110},styles.layoutOne]} />
+            <View style={[{height:innerHeight -30},styles.layoutOne]} />
         </View>
     )
 }

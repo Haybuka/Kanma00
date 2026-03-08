@@ -6,7 +6,7 @@ import { COLORS } from '../../theme/colors';
 import DashboardHeading from './Heading';
 import DashboardBalance from './Balance';
 import Services from './Services';
-import { mockUser } from '../../data';
+import { mockAccount, mockUser } from '../../data';
 
 
 const Dashboard = () => {
@@ -16,7 +16,7 @@ const Dashboard = () => {
         <>
             <View style={[{ paddingVertical: insets.top }, styles.container]}>
                 <DashboardHeading user={mockUser} />
-                <DashboardBalance />
+                <DashboardBalance account={mockAccount}/>
             </View>
             <Services />
         </>

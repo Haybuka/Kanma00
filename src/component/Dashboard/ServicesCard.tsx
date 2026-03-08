@@ -1,4 +1,4 @@
-import { StyleSheet, View } from 'react-native'
+import { StyleSheet, TouchableOpacity } from 'react-native'
 import React from 'react'
 import IconContainer from '../IconContainer'
 import { Icons } from '../../../assets/icons'
@@ -17,13 +17,13 @@ const ServicesCard = () => {
         borderRadius : 12
     }
     return (
-        <View style={styles.container}>
+        <TouchableOpacity activeOpacity={0.2} style={styles.container}>
             <IconContainer options={options}>
                 <Icons.Send />
             </IconContainer>
             <Spacer height={12} />
             <Typography color={COLORS.grey600} textstyle={AppTextStyle.bodyTiny} >Transfer</Typography >
-        </View>
+        </TouchableOpacity>
     )
 }
 

@@ -1,18 +1,36 @@
-import { StyleSheet, View } from 'react-native'
-import React from 'react'
+import { Pressable, StyleSheet, View } from 'react-native'
+import React, { useState } from 'react'
 import { COLORS } from '../../theme/colors'
 import { AppTextStyle, Typography } from '../Typography'
 import { Icons } from '../../../assets/icons'
+import { Account } from '../../data'
+import { formatNumber } from '../../util/formatter'
 
-const DashboardBalance = () => {
+type Props = {
+    account: Account
+}
+const DashboardBalance = ({ account }: Props) => {
+    const [balanceVisible, setBalanceVisible] = useState(false)
+    const handleEyeToggle = () => {
+        setBalanceVisible(!balanceVisible)
+    }
+  
     return (
         <View style={styles.contentStyle}>
             <View style={styles.container}>
                 <View style={styles.heading}>
                     <Typography textstyle={AppTextStyle.bodySmall} color={COLORS.white}>Total Balance</Typography>
-                    <Icons.Eye />
+                    <Pressable onPress={handleEyeToggle}>
+                        <Icons.Eye />
+                    </Pressable>
                 </View>
-                <Typography textstyle={AppTextStyle.heading3} color={COLORS.white}>₦13,317,730</Typography>
+                {balanceVisible ? (
+                    <Typography textstyle={AppTextStyle.heading3} color={COLORS.white}>{formatNumber(account.balance)}</Typography>
+
+                ) : (
+
+                    <Typography textstyle={AppTextStyle.heading3} color={COLORS.white}>{account.accountNumber}</Typography>
+                )}
 
             </View>
         </View>
@@ -22,18 +40,18 @@ const DashboardBalance = () => {
 export default DashboardBalance
 
 const styles = StyleSheet.create({
-    contentStyle : {
-          paddingHorizontal: 20,
+    contentStyle: {
+        paddingHorizontal: 20,
     },
     container: {
         marginVertical: 20,
-        marginBottom : 10,
+        marginBottom: 10,
         borderColor: COLORS.white20,
         borderWidth: 1,
         borderRadius: 16,
         backgroundColor: COLORS.white10,
         padding: 20,
-      
+
     },
     heading: {
         flexDirection: 'row',
