@@ -77,6 +77,7 @@ const styles = StyleSheet.create({
         position: 'absolute'
     },
     itemSeperator: {
-        height: 12
+        height: 12,
+        backgroundColor:'red'
     }
 })

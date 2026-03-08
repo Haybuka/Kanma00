@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         paddingHorizontal: 17,
         paddingVertical: 12,
-        marginRight:12,
+        marginRight:16,
         boxShadow: [
             {
                 offsetX: 0,
