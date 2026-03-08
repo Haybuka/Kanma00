@@ -35,6 +35,6 @@ const DashboardHeading = ({user}:Prop) => {
 export default DashboardHeading
 
 const styles = StyleSheet.create({
-    container: { flexDirection: "row", gap: 8 ,marginVertical : 24},
+    container: { flexDirection: "row", gap: 8 ,marginVertical : 24, paddingHorizontal: 20,},
     titleContainer: { flex: 1, flexDirection: 'row', gap: 16 }
 })

@@ -5,7 +5,7 @@
  * @format
  */
 
-import { ScrollView, StatusBar, useColorScheme, } from 'react-native';
+import { ScrollView, StatusBar,  } from 'react-native';
 import {
   SafeAreaProvider,
   // useSafeAreaInsets,

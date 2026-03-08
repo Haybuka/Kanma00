@@ -13,11 +13,13 @@ const Dashboard = () => {
     const insets = useSafeAreaInsets();
 
     return (
-        <View style={[{ paddingVertical: insets.top }, styles.container]}>
-            <DashboardHeading user={mockUser} />
-            <DashboardBalance />
+        <>
+            <View style={[{ paddingVertical: insets.top }, styles.container]}>
+                <DashboardHeading user={mockUser} />
+                <DashboardBalance />
+            </View>
             <Services />
-        </View>
+        </>
     )
 }
 
@@ -27,7 +29,7 @@ const styles = StyleSheet.create({
     container: {
         backgroundColor: COLORS.Slate900,
         paddingVertical: 40,
-        paddingHorizontal: 20,
+        // paddingHorizontal: 20,
     },
 
 })
