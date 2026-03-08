@@ -4,3 +4,8 @@ export const formatNumber = (val: number) => {
     currency: 'NGN',
   }).format(val);
 };
+
+export const toPercentage = (value: number, total: number): number => {
+  if (total === 0) return 0;
+  return (value / total) * 100;
+};
